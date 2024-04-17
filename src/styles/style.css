@@ -5,9 +5,9 @@
 }
 
 @font-face {
-    font-family: "SeoulHangang EB";
+    font-family: "SeoulHangang";
     font-style: normal;
-    src: url(../fonts/seoulhangang-eb.ttf);
+    src: url(../fonts/SeoulHangangCondensed-Medium.ttf);
 }
 
 @font-face {
@@ -29,19 +29,18 @@ li {
 }
 
 body {
-
     width: 100%;
     height: 100%;
-    font-family: 'SeoulHangang CBL', sans-serif;
-    background-color: #FFF;
+    font-family: "SeoulHangang CBL", sans-serif;
+    background-color: #fff;
 }
 
 header {
     display: flex;
     flex-direction: column;
     height: auto;
-    background: #D9D9D9;
-    margin-bottom: 50px;
+    background: #d9d9d9;
+    margin-bottom: 44px;
     border-radius: 0 0 30px 30px;
     margin-left: 30px;
     margin-right: 30px;
@@ -68,7 +67,7 @@ header {
 }
 
 .logo-name a {
-    color: #FFF;
+    color: #fff;
 }
 
 .logo-name h1 {
@@ -80,15 +79,14 @@ header {
 }
 
 .order-button {
-    font-family: 'SeoulHangang EB', sans-serif;
+    font-family: "SeoulHangang EB", sans-serif;
     text-align: center;
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
     margin-left: auto;
     margin-right: 80px;
     min-width: 315px;
     min-height: 42px;
     border-radius: 30px;
-
 }
 
 .order-button a {
@@ -109,46 +107,46 @@ header {
     margin-right: auto;
 }
 
-.buttons {
+.menu-buttons {
     background-color: #2b2b2b;
     min-width: 190px;
     min-height: 55px;
     border-radius: 30px;
     text-align: center;
     align-items: center;
-
 }
 
-.buttons a {
+.menu-buttons a {
     display: block;
     height: 100%;
     color: #fff;
     font-weight: 400;
     font-size: 24px;
-    margin-top: 12px;
+    padding-top: 12px;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-
 }
 
 .first-block {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     height: auto;
+    width: auto;
     min-height: 400px;
-    background: #D9D9D9;
+    background: #d9d9d9;
     border-radius: 30px;
     margin-left: 30px;
     margin-right: 30px;
+    margin-bottom: 44px;
 }
 
 .first-block-text {
-    font-family: 'SeoulHangang CEB', sans-serif;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    font-family: "SeoulHangang CEB", sans-serif;
+    margin: 87px 76px 110px 141px;
 }
 
 .first-block-text h1 {
@@ -158,6 +156,204 @@ header {
     color: #000;
 }
 
+.first-block-text ul li {
+    list-style: inside;
+    font-weight: 400;
+    font-size: 32px;
+    color: #000;
+}
+
 .first-block-img {
-    size: 10px;
+    border-radius: 30px;
+    height: auto;
+    width: auto;
+    padding-top: 69px;
+    /* margin-top: 69px;
+    margin-bottom: 107px;
+    margin: 69px 0 93px 107px; */
+}
+
+.second-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    width: auto;
+    min-height: 400px;
+    background: #d9d9d9;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 44px;
+}
+
+.second-block-text {
+    font-family: "SeoulHangang CEB", sans-serif;
+    height: auto;
+    width: auto;
+    margin: 170px 134px 203px;
+}
+
+.second-block-text h1 {
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: #000;
+}
+
+.second-block-text ul li {
+    list-style: inside;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 208%;
+    color: #000;
+}
+
+.second-block-img {
+    border-radius: 30px;
+    width: auto;
+    height: auto;
+    padding: 152px 77px 186px 151px;
+}
+
+.third-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    width: auto;
+    min-height: 400px;
+    background: #d9d9d9;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 44px;
+}
+
+.third-block-text {
+    font-family: "SeoulHangang CEB", sans-serif;
+    height: auto;
+    width: auto;
+    margin: 170px 134px 203px;
+}
+
+.third-block-img {
+    border-radius: 30px;
+    width: auto;
+    height: auto;
+    padding: 152px 77px 186px 151px;
+}
+
+.third-block-text h1 {
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: #000;
+}
+
+.third-block-text ul li {
+    list-style: inside;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 208%;
+    color: #000;
+}
+
+.order-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    width: auto;
+    min-height: 800px;
+    background: #d9d9d9;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 44px;
+    text-align: center;
+}
+
+.order-block-image {
+    border-radius: 30px;
+    min-width: 500px;
+    min-height: 644px;
+    height: auto;
+    width: auto;
+    padding-top: 6%;
+}
+
+.order-block-main {
+    flex-direction: column;
+    justify-content: center;
+    margin: 140px 244px 166px 153px;
+}
+
+.order-block-main .main-text {
+    font-family: "SeoulHangang CEB";
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 48px;
+}
+
+.order-block-main .price-tag {
+    font-family: "SeoulHangang CEB";
+    font-weight: 500;
+    font-size: 64px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 49px;
+}
+
+.order-block-main p {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #4f4f4f;
+    margin-bottom: 10px;
+}
+
+.order-block-main .order-block-button {
+    font-family: "SeoulHangang CEB";
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #2b2b2b;
+    border-radius: 50px;
+    width: auto;
+    height: 114px;
+}
+
+.order-block-main .order-block-button a {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    display: block;
+    font-weight: 400;
+    font-size: 56px;
+    color: #fff;
+}
+
+strike {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+footer{
+  flex-direction: column;
+  justify-content:baseline;
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  background: #d9d9d9;
+
+}
+
+footer h1{
+  font-family: "SeoulHangang";
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #464646;
+  padding-top: 100px;
 }
