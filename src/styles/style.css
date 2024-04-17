@@ -20,6 +20,10 @@
     padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -89,6 +93,11 @@ header {
     border-radius: 30px;
 }
 
+.order-button:hover{
+  background-color: #F66;
+  transition: 0.7s;
+}
+
 .order-button a {
     display: block;
     height: 100%;
@@ -114,6 +123,11 @@ header {
     border-radius: 30px;
     text-align: center;
     align-items: center;
+}
+
+.menu-buttons:hover{
+  background: #000;
+  transition: 0.7s;
 }
 
 .menu-buttons a {
@@ -322,6 +336,11 @@ header {
     border-radius: 50px;
     width: auto;
     height: 114px;
+}
+
+.order-block-main .order-block-button:hover{
+  background: #000;
+  transition: 0.7s;
 }
 
 .order-block-main .order-block-button a {
