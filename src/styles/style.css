@@ -1,374 +1,434 @@
 @font-face {
-    font-family: "SeoulHangang CBL";
-    font-style: normal;
-    src: url(../fonts/SeoulHangangCondensed-Light.ttf);
+  font-family: "SeoulHangang CBL";
+  font-style: normal;
+  src: url(../fonts/SeoulHangangCondensed-Light.ttf);
 }
 
 @font-face {
-    font-family: "SeoulHangang";
-    font-style: normal;
-    src: url(../fonts/SeoulHangangCondensed-Medium.ttf);
+  font-family: "SeoulHangang";
+  font-style: normal;
+  src: url(../fonts/SeoulHangangCondensed-Medium.ttf);
 }
 
 @font-face {
-    font-family: "SeoulHangang CEB";
-    src: url(../fonts/SeoulHangangCondensed-ExtraBold.ttf);
+  font-family: "SeoulHangang CEB";
+  src: url(../fonts/SeoulHangangCondensed-ExtraBold.ttf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    font-family: "SeoulHangang CBL", sans-serif;
-    background-color: #fff;
+  width: 100%;
+  height: 1550px;
+  font-family: "SeoulHangang CBL", sans-serif;
+  background-color: #fff;
 }
 
+.navigation-menu {
+    padding: 10% 50px;
+    height: 100%;
+    position: fixed;
+    background: rgba(20, 20, 20, 0.7);
+    backdrop-filter: blur(16px);
+    left: -500px;
+    border-right: 7px solid #2b2b2b;
+    transition: all 0.4s ease;
+  }
+  .navigation-menu:hover {
+    left: 0;
+    transition: all 0.4s ease;
+  }
+  
+  .navigation-menu .title {
+    font-family: "SeoulHangang CEB";
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #fff;
+  }
+  
+  .drop-down-list-menu {
+    display: none;
+    transition: all 0.25s ease;
+  }
+  
+  .list-menu li:hover .drop-down-list-menu {
+    display: block;
+    transition: all 0.25s ease;
+  }
+  
+  .navigation-menu .list-menu a {
+    font-family: "SeoulHangang CEB";
+    font-size: 25px;
+    color: #fff;
+  }
+  
+  .navigation-menu .list-menu p {
+    font-family: "SeoulHangang CEB";
+    font-size: 25px;
+    color: #fff;
+  }
+  
+  .navigation-menu .list-menu .drop-down-list-menu a {
+    font-family: "SeoulHangang CEB";
+    font-size: 25px;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .navigation-menu .list-menu .drop-down-list-menu a:hover {
+    transition: all 0.25s ease;
+    padding-left: 20px;
+  }
+  
+  .navigation-menu .list-menu li {
+    padding: 5px 0;
+  }
+
 header {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    background: #d9d9d9;
-    margin-bottom: 44px;
-    border-radius: 0 0 30px 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  background: #d9d9d9;
+  min-width: 1490px;
+  margin-bottom: 44px;
+  border-radius: 0 0 30px 30px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .logo-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 0 0 30px 30px;
-    width: 80%;
-    min-height: 124px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    background: #2b2b2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 30px 30px;
+  width: 80%;
+  min-height: 124px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #2b2b2b;
 }
 
 .logo-name {
-    font-weight: 400;
-    text-align: center;
-    height: 100%;
-    margin-left: 20px;
+  font-weight: 400;
+  text-align: center;
+  height: 100%;
+  margin-left: 20px;
 }
 
 .logo-name a {
-    color: #fff;
+  color: #fff;
 }
 
 .logo-name h1 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .logo-name h2 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .order-button {
-    font-family: "SeoulHangang EB", sans-serif;
-    text-align: center;
-    background-color: #d9d9d9;
-    margin-left: auto;
-    margin-right: 80px;
-    min-width: 315px;
-    min-height: 42px;
-    border-radius: 30px;
+  font-family: "SeoulHangang EB", sans-serif;
+  text-align: center;
+  background-color: #d9d9d9;
+  margin-left: auto;
+  margin-right: 80px;
+  min-width: 315px;
+  min-height: 42px;
+  border-radius: 30px;
 }
 
-.order-button:hover{
-  background-color: #F66;
+.order-button:hover {
+  background-color: #f66;
   transition: 0.7s;
 }
 
 .order-button a {
-    display: block;
-    height: 100%;
-    font-weight: 400;
-    font-size: 36px;
-    color: #2b2b2b;
+  display: block;
+  height: 100%;
+  font-weight: 400;
+  font-size: 36px;
+  color: #2b2b2b;
 }
 
 .menu {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin-top: 36px;
-    margin-bottom: 36px;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu-buttons {
-    background-color: #2b2b2b;
-    min-width: 190px;
-    min-height: 55px;
-    border-radius: 30px;
-    text-align: center;
-    align-items: center;
+  background-color: #2b2b2b;
+  min-width: 190px;
+  min-height: 55px;
+  border-radius: 30px;
+  text-align: center;
+  align-items: center;
 }
 
-.menu-buttons:hover{
+.menu-buttons:hover {
   background: #000;
   transition: 0.7s;
 }
 
 .menu-buttons a {
-    display: block;
-    height: 100%;
-    color: #fff;
-    font-weight: 400;
-    font-size: 24px;
-    padding-top: 12px;
+  display: block;
+  height: 100%;
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+  padding-top: 12px;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  min-width: 1490px;
 }
 
 .first-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: auto;
-    width: auto;
-    min-height: 400px;
-    background: #d9d9d9;
-    border-radius: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  width: auto;
+  min-height: 400px;
+  background: #d9d9d9;
+  border-radius: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 44px;
 }
 
 .first-block-text {
-    font-family: "SeoulHangang CEB", sans-serif;
-    margin: 87px 76px 110px 141px;
+  font-family: "SeoulHangang CEB", sans-serif;
+  margin: 87px 76px 110px 141px;
 }
 
 .first-block-text h1 {
-    font-weight: 400;
-    font-size: 48px;
-    text-align: center;
-    color: #000;
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+  color: #000;
 }
 
 .first-block-text ul li {
-    list-style: inside;
-    font-weight: 400;
-    font-size: 32px;
-    color: #000;
+  list-style: inside;
+  font-weight: 400;
+  font-size: 32px;
+  color: #000;
 }
 
 .first-block-img {
-    border-radius: 30px;
-    height: auto;
-    width: auto;
-    padding-top: 69px;
-    /* margin-top: 69px;
+  border-radius: 30px;
+  height: auto;
+  width: auto;
+  padding-top: 69px;
+  /* margin-top: 69px;
     margin-bottom: 107px;
     margin: 69px 0 93px 107px; */
 }
 
 .second-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: auto;
-    width: auto;
-    min-height: 400px;
-    background: #d9d9d9;
-    border-radius: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  width: auto;
+  min-height: 400px;
+  background: #d9d9d9;
+  border-radius: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 44px;
 }
 
 .second-block-text {
-    font-family: "SeoulHangang CEB", sans-serif;
-    height: auto;
-    width: auto;
-    margin: 170px 134px 203px;
+  font-family: "SeoulHangang CEB", sans-serif;
+  height: auto;
+  width: auto;
+  margin: 170px 134px 203px;
 }
 
 .second-block-text h1 {
-    font-weight: 400;
-    font-size: 48px;
-    text-align: center;
-    color: #000;
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+  color: #000;
 }
 
 .second-block-text ul li {
-    list-style: inside;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 208%;
-    color: #000;
+  list-style: inside;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 208%;
+  color: #000;
 }
 
 .second-block-img {
-    border-radius: 30px;
-    width: auto;
-    height: auto;
-    padding: 152px 77px 186px 151px;
+  border-radius: 30px;
+  width: auto;
+  height: auto;
+  padding: 152px 77px 186px 151px;
 }
 
 .third-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: auto;
-    width: auto;
-    min-height: 400px;
-    background: #d9d9d9;
-    border-radius: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  width: auto;
+  min-height: 400px;
+  background: #d9d9d9;
+  border-radius: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 44px;
 }
 
 .third-block-text {
-    font-family: "SeoulHangang CEB", sans-serif;
-    height: auto;
-    width: auto;
-    margin: 170px 134px 203px;
+  font-family: "SeoulHangang CEB", sans-serif;
+  height: auto;
+  width: auto;
+  margin: 170px 134px 203px;
 }
 
 .third-block-img {
-    border-radius: 30px;
-    width: auto;
-    height: auto;
-    padding: 152px 77px 186px 151px;
+  border-radius: 30px;
+  width: auto;
+  height: auto;
+  padding: 152px 77px 186px 151px;
 }
 
 .third-block-text h1 {
-    font-weight: 400;
-    font-size: 48px;
-    text-align: center;
-    color: #000;
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+  color: #000;
 }
 
 .third-block-text ul li {
-    list-style: inside;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 208%;
-    color: #000;
+  list-style: inside;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 208%;
+  color: #000;
 }
 
 .order-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: auto;
-    width: auto;
-    min-height: 800px;
-    background: #d9d9d9;
-    border-radius: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 44px;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  width: auto;
+  min-height: 800px;
+  background: #d9d9d9;
+  border-radius: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 44px;
+  text-align: center;
 }
 
 .order-block-image {
-    border-radius: 30px;
-    min-width: 500px;
-    min-height: 644px;
-    height: auto;
-    width: auto;
-    padding-top: 6%;
+  border-radius: 30px;
+  min-width: 500px;
+  min-height: 644px;
+  height: auto;
+  width: auto;
+  padding-top: 6%;
 }
 
 .order-block-main {
-    flex-direction: column;
-    justify-content: center;
-    margin: 140px 244px 166px 153px;
+  flex-direction: column;
+  justify-content: center;
+  margin: 140px 244px 166px 153px;
 }
 
 .order-block-main .main-text {
-    font-family: "SeoulHangang CEB";
-    font-weight: 400;
-    font-size: 48px;
-    text-align: center;
-    color: #000;
-    margin-bottom: 48px;
+  font-family: "SeoulHangang CEB";
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 48px;
 }
 
 .order-block-main .price-tag {
-    font-family: "SeoulHangang CEB";
-    font-weight: 500;
-    font-size: 64px;
-    text-align: center;
-    color: #000;
-    margin-bottom: 49px;
+  font-family: "SeoulHangang CEB";
+  font-weight: 500;
+  font-size: 64px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 49px;
 }
 
 .order-block-main p {
-    font-weight: 400;
-    font-size: 24px;
-    text-align: center;
-    color: #4f4f4f;
-    margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #4f4f4f;
+  margin-bottom: 10px;
 }
 
 .order-block-main .order-block-button {
-    font-family: "SeoulHangang CEB";
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    background: #2b2b2b;
-    border-radius: 50px;
-    width: auto;
-    height: 114px;
+  font-family: "SeoulHangang CEB";
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #2b2b2b;
+  border-radius: 50px;
+  width: auto;
+  height: 114px;
 }
 
-.order-block-main .order-block-button:hover{
+.order-block-main .order-block-button:hover {
   background: #000;
   transition: 0.7s;
 }
 
 .order-block-main .order-block-button a {
-    padding-top: 6%;
-    padding-bottom: 6%;
-    display: block;
-    font-weight: 400;
-    font-size: 56px;
-    color: #fff;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  display: block;
+  font-weight: 400;
+  font-size: 56px;
+  color: #fff;
 }
 
 strike {
-    text-decoration: line-through;
-    text-decoration-color: red;
+  text-decoration: line-through;
+  text-decoration-color: red;
 }
 
-footer{
+footer {
   flex-direction: column;
-  justify-content:baseline;
+  justify-content: baseline;
   border-radius: 30px 30px 0 0;
   width: 100%;
   height: 100%;
   min-height: 200px;
   background: #d9d9d9;
-
 }
 
-footer h1{
+footer h1 {
   font-family: "SeoulHangang";
   font-weight: 400;
   font-size: 40px;
