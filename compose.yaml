@@ -6,4 +6,4 @@ services:
     develop:
       watch:
       - path: src/
-        action: rebuild
+        action: sync+restart
