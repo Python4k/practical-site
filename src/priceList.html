@@ -1,82 +1,160 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="icon" href="icons/icon.ico" type="image/x-icon" />
-    <script src="/scripts/script.js"></script>
-    <title>Python4k | Прайс лист</title>
-  </head>
-  <body>
-    <div class="navigation-menu">
-      <div class="title">
-        <h1>НАВИГАЦИЯ</h1>
-      </div>
-      <div class="list-menu">
-        <ul>
-          <li>
-            <a href="#">Блог</a>
-          </li>
-          <li>
-            <input type="checkbox" id="check-portfolio">
-            <label for="check-portfolio">Портфолио</label>
-            <div class="drop-down-list-menu">
-              <ul>
-                <li><a href="#"> - Личный сайт</a></li>
-                <li><a href="#"> - Почтовый клиент</a></li>
-                <li><a href="#"> - Календарное планирование</a></li>
-                <li><a href="#"> - Облачное хранилище</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <input type="checkbox" id="check-price">
-            <label for="check-price">Прайс-лист</label>
-            <div class="drop-down-list-menu">
-              <ul>
-                <li><a href="#"> - Сайт под ключ</a></li>
-                <li><a href="#"> - Дизайн</a></li>
-                <li><a href="#"> - Фуллстек разработка</a></li>
-                <li><a href="#"> - Верстка</a></li>
-                <li><a href="#"> - Серверная часть</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <input type="checkbox" id="check-contacts">
-            <label for="check-contacts">Контакты</label>
-            <div class="drop-down-list-menu">
-              <ul>
-                <li><a href="order.html"> - Оставить заявку</a></li>
-                <li><a href="#"> - VK</a></li>
-                <li><a href="#"> - Группа VK</a></li>
-                <li><a href="#"> - Telegram</a></li>
-                <li><a href="#"> - GitHub</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <header>
-      <div class="logo-header">
-        <div class="logo-name">
-          <a href="index.html">
-            <h1>Python4k</h1>
-            <h2>Веб-сайт под ключ</h2>
-          </a>
-        </div>
-        <div class="order-button">
-          <a href="#bottom">Заказать</a>
-        </div>
-      </div>
-    </header>
-    <div class="content">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="icons/icon.ico" type="image/x-icon" />
+  <title>Python4k | Прайс лист</title>
+</head>
+
+<body>
+  <div class="navigation-menu">
+    <div class="title">
+      <h1>МЕНЮ</h1>
     </div>
-    <footer>
-        <h1>© Рыбаков Леонид 2024 год</h1>
-    </footer>
-  </body>
+    <div class="list-menu">
+      <ul>
+        <li>
+          <a href="#">Блог</a>
+        </li>
+        <li>
+          <input type="checkbox" id="check-nav">
+          <label for="check-nav">Навигация</label>
+          <div class="drop-down-list-menu">
+            <ul>
+              <li><a href="index.html"> - Главная</a></li>
+              <li><a href="priceList.html"> - Прайс-лист</a></li>
+              <li><a href="portfolio.html"> - Портфолио</a></li>
+              <li><a href="order.html"> - Заказать</a></li>
+              <li><a href="contacts.html"> - Контакты</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <input type="checkbox" id="check-portfolio">
+          <label for="check-portfolio">Проекты</label>
+          <div class="drop-down-list-menu">
+            <ul>
+              <li><a href="index.html"> - Личный сайт</a></li>
+              <li><a href="https://github.com/Python4k/Email_Realization"> - Почтовый клиент</a></li>
+              <li><a href="#"> - Облачное хранилище</a></li>
+              <li><a href="#"> - API для умного дома</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <input type="checkbox" id="check-price">
+          <label for="check-price">Прайс-лист</label>
+          <div class="drop-down-list-menu">
+            <ul>
+              <li><a href="priceList.html"> - Сайт под ключ</a></li>
+              <li><a href="priceList.html"> - Дизайн</a></li>
+              <li><a href="priceList.html"> - Фуллстек разработка</a></li>
+              <li><a href="priceList.html"> - Верстка</a></li>
+              <li><a href="priceList.html"> - Серверная часть</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <input type="checkbox" id="check-contacts">
+          <label for="check-contacts">Контакты</label>
+          <div class="drop-down-list-menu">
+            <ul>
+              <li><a href="order.html"> - Оставить заявку</a></li>
+              <li><a href="https://vk.com/python4k"> - VK</a></li>
+              <li><a href="https://vk.com/python4k_beats"> - Группа VK</a></li>
+              <li><a href="https://t.me/python4k"> - Telegram</a></li>
+              <li><a href="https://github.com/Python4k"> - GitHub</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <header>
+    <div class="logo-header">
+      <div class="logo-name">
+        <a href="index.html">
+          <h1>Python4k</h1>
+          <h2>Веб-сайт под ключ</h2>
+        </a>
+      </div>
+      <div class="order-button">
+        <a href="#bottom">Заказать</a>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    
+    <div id="slider-container">
+      <div id="top">
+        <img src="images/left-arrow.png" alt="" class="arrow arrow-left">
+        <div id="frame">
+          <div id="slider">
+            <div class="slider-block">
+              <h1>Сайт под ключ</h1>
+              <h2>от 79999 руб.</h2>
+              <br>
+              <p>Полностью готовый к использованию веб-сайт, который мы разрабатываем и настраиваем специально для вас. Вам не нужно беспокоиться о технических аспектах создания сайта, так как мы берем на себя все заботы от начала до конца.</p>
+              <br>
+              <p>После того, как мы закончим разработку вашего сайта, он будет полностью готов к публикации на выбранном вами хостинге. Мы обеспечим его стабильную работу, оптимизируем скорость загрузки страниц и адаптируем дизайн под различные устройства (мобильные телефоны, планшеты, компьютеры).</p>
+              <br>
+              <p>Ваш сайт будет иметь уникальный и привлекательный дизайн, соответствующий вашим потребностям и целям бизнеса. Мы также интегрируем необходимые функциональные возможности, такие как формы обратной связи, онлайн-оплата, системы управления контентом и многое другое.</p>
+            </div>
+            <div class="slider-block">
+              <h1>Полная разработка</h1>
+              <h2>от 49999 руб.</h2>
+              <br>
+              <p>Комплексная услуга, которая включает в себя создание сайта с серверной частью и пользовательской частью, а также адаптацию дизайна под требования заказчика. Наша команда опытных разработчиков обеспечит полный цикл разработки: от проектирования архитектуры до тестирования и запуска проекта.</p>
+              <br>
+              <p>Мы готовы реализовать любые ваши идеи и пожелания по функционалу сайта, а также подобрать оптимальные технические решения для достижения наилучшего результата. Вы получите качественный продукт, который будет соответствовать всем современным стандартам веб-разработки.</p>
+              <br>
+              <p>Кроме того, мы предоставляем услуги по поддержке и обновлению созданного сайта после его запуска. Это гарантирует его бесперебойную работу и актуальность информации на протяжении всего времени эксплуатации.</p>
+            </div>
+            <div class="slider-block">
+              <h1>Создание дизайна (UI/UX)</h1>
+              <h2>от 19999 руб.</h2>
+              <br>
+              <p>Представляет собой профессиональную услугу по созданию уникального и привлекательного дизайна для вашего сайта. Команда наших талантливых дизайнеров работает над каждым проектом индивидуально, учитывая все ваши требования и пожелания.</p>
+              <br>
+              <p>Мы предлагаем широкий спектр услуг, начиная от разработки логотипа и фирменного стиля до полного редизайна существующего сайта. Наши специалисты помогут вам создать уникальный образ вашей компании в Интернете, который будет запоминающимся и узнаваемым.</p>
+              <br>
+              <p>Мы гарантируем высокое качество работы, соблюдение сроков выполнения заказа и полное удовлетворение ваших потребностей. Доверьте нам создание дизайна для вашего сайта – и вы получите отличный результат!</p>
+            </div>
+            <div class="slider-block">
+              <h1>Пользовательский интерфейс</h1>
+              <h2>от 2999 руб.</h2>
+              <br>
+              <p>Разработка уникального и интуитивно понятного интерфейса для вашего сайта. Наша команда профессионалов создаст крутые анимации и визуальные эффекты, чтобы ваш сайт был не только красивым, но и удобным в использовании.</p>
+              <br>
+              <p>Мы учитываем все последние тенденции в области UI/UX дизайна, чтобы ваш сайт был максимально привлекательным для пользователей. Кроме того, мы уделяем особое внимание скорости загрузки страниц и адаптивности дизайна под различные устройства.</p>
+              <br>
+              <p>Заказывая наш товар "Пользовательский интерфейс", вы можете быть уверены в том, что ваш сайт будет выглядеть стильно и современно, а пользователи будут чувствовать себя комфортно при работе с ним.</p>
+            </div>
+            <div class="slider-block">
+              <h1>Серверная часть</h1>
+              <h2>от 29999 руб.</h2>
+              <br>
+              <p>Представляет собой профессиональную разработку программного обеспечения, которое будет отвечать за обработку данных и взаимодействие с базой данных на вашем сайте. Наша команда опытных программистов создаст быструю, безопасную и надежную серверную часть, которая будет работать круглосуточно.</p>
+              <br>
+              <p>Мы гарантируем высокую производительность и отсутствие ошибок в работе серверной части, что обеспечит бесперебойную работу вашего сайта. Благодаря нашему опыту и знаниям последних технологий, мы можем предложить вам оптимальное решение для вашего бизнеса.</p>
+              <br>
+              <p>Заказывая нашу услугу, вы можете быть уверены в том, что ваш сайт будет работать быстро и безошибочно</p>
+            </div>
+          </div>
+        </div>
+        <img src="images/right-arrow.png" alt="" class="arrow arrow-right">
+      </div>
+      <div id="bottom"></div>
+    </div>
+    <script src="./second_slider.js"></script>
+  </div>
+  <footer>
+    <h1>© Рыбаков Леонид 2024 год</h1>
+  </footer>
+</body>
+<script src="scripts/script.js"></script>
+
 </html>
