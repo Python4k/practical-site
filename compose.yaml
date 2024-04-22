@@ -6,5 +6,5 @@ services:
     develop:
       watch:
       - action: rebuild
-        path: ./
+        path: /usr/share/nginx/html
         
