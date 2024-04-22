@@ -5,6 +5,6 @@ services:
       - ":80:80"
     develop:
       watch:
-      - action: sync
+      - action: sync+restart
         path: ./
         target: /src
