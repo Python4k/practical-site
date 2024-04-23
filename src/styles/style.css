@@ -33,8 +33,6 @@ li {
 }
 
 body {
-  width: 100%;
-  max-height: 1550px;
   font-family: "SeoulHangang CBL", sans-serif;
   background-color: #fff;
 }
@@ -134,7 +132,7 @@ header {
   display: flex;
   flex-direction: column;
   background: #d9d9d9;
-  min-width: 1550px;
+  min-width: 1vw;
   margin-bottom: 44px;
   border-radius: 0 0 50px 50px;
   padding-bottom: 50px;
@@ -200,7 +198,7 @@ header {
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
-  min-width: 1550px;
+  min-width: 1vw;
   margin-bottom: 44px;
 }
 
@@ -220,7 +218,8 @@ header {
 
 .first-block-text {
   font-family: "SeoulHangang CEB", sans-serif;
-  margin: 87px 76px 110px 141px;
+  margin-top: 20px;
+  padding: 75px 0;
 }
 
 .first-block-text h1 {
@@ -241,10 +240,7 @@ header {
   border-radius: 30px;
   height: auto;
   width: auto;
-  padding-top: 69px;
-  /* margin-top: 69px;
-    margin-bottom: 107px;
-    margin: 69px 0 93px 107px; */
+  padding: 75px 0;
 }
 
 /* SECOND BLOCK */
@@ -253,8 +249,6 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: auto;
-  width: auto;
   min-height: 400px;
   background: #d9d9d9;
   border-radius: 50px;
@@ -263,9 +257,7 @@ header {
 
 .second-block-text {
   font-family: "SeoulHangang CEB", sans-serif;
-  height: auto;
-  width: auto;
-  margin: 170px 134px 203px;
+  padding-top: 100px
 }
 
 .second-block-text h1 {
@@ -287,7 +279,7 @@ header {
   border-radius: 30px;
   width: auto;
   height: auto;
-  padding: 152px 77px 186px 151px;
+  padding: 90px 0;
 }
 
 /* THIRD BLOCK */
@@ -476,11 +468,11 @@ footer h1 {
   border-radius: 50px
 }
 
-.form__label{
+.form__label {
   margin-right: 25px;
 }
 
-.form__input{
+.form__input {
   font-family: "SeoulHangang";
   font-size: 20px;
   margin-bottom: 50px;
@@ -488,14 +480,14 @@ footer h1 {
   border-radius: 20px;
 }
 
-.form__btn{
+.form__btn {
   font-family: "SeoulHangang CEB";
   font-size: 20px;
   padding: 10px 40px;
   border-radius: 20px;
 }
 
-.form__btn:hover{
+.form__btn:hover {
   background-color: #464646;
   color: #fff;
 }
@@ -541,23 +533,24 @@ footer h1 {
   height: 100%;
   object-fit: cover;
   flex-shrink: 0;
-  background-color:#2b2b2b;
+  background-color: #2b2b2b;
   border-radius: 50px;
 }
 
-.slider-block h1{
+.slider-block h1 {
   font-family: "SeoulHangang";
   font-size: 50px;
   color: #fff;
 }
-.slider-block h2{
+
+.slider-block h2 {
   font-family: "SeoulHangang";
   font-size: 40px;
   color: #fff;
   text-decoration: underline;
 }
 
-.slider-block p{
+.slider-block p {
   font-family: "SeoulHangang";
   font-size: 20px;
   color: #fff;
@@ -578,7 +571,7 @@ footer h1 {
 
 .active {
   background-color: #2b2b2b;
-;
+  ;
 }
 
 #bottom {
@@ -599,29 +592,29 @@ footer h1 {
   align-items: center;
 }
 
-.about-video .about-text{
+.about-video .about-text {
   flex-direction: column;
   text-align: center;
   max-width: 30%;
 
 }
 
-.about-video .about-text h1{
+.about-video .about-text h1 {
   font-family: "SeoulHangang CBL";
   font-size: 40px;
 }
 
-.about-video .about-text p{
+.about-video .about-text p {
   font-family: "SeoulHangang CBL";
   font-size: 20px;
 }
 
-.about-video video{
+.about-video video {
   height: 30vh;
   border-radius: 50px;
 }
 
-.ya-map{
+.ya-map {
   width: 100%;
   height: 100%;
   padding: 50px;
@@ -637,7 +630,7 @@ footer h1 {
 
 /* TABLE */
 
-.about-table{
+.about-table {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -645,25 +638,28 @@ footer h1 {
   padding: 70px;
   border-radius: 50px;
   font-size: 40px;
-  font-family: "SeoulHangang CBL"; 
+  font-family: "SeoulHangang CBL";
 }
 
-.about-table caption{
+.about-table caption {
   font-family: "SeoulHangang CEB";
   font-size: 60px;
   padding-bottom: 30px;
 }
 
-.about-table th, td{
+.about-table th,
+td {
   border: 1px solid #2b2b2b;
   padding: 10px 15px;
   border-radius: 10px;
 }
 
-.about-table thead{
+.about-table thead {
   background-color: #464646;
   color: #fff;
 }
+
+/* BLOG PAGE */
 
 .post {
   display: flex;
@@ -673,7 +669,7 @@ footer h1 {
   border-radius: 50px;
 }
 
-.post-wrapper{
+.post-wrapper {
   padding: 100px 400px;
   text-align: center;
 }
@@ -694,4 +690,533 @@ footer h1 {
   max-width: 700px;
   margin: 30px;
   border-radius: 50px;
+}
+
+
+/* ADAPTIVE STYLES */
+
+@media (max-width: 500px) {
+  body {
+    width: auto
+  }
+
+  header {
+    width: auto;
+  }
+
+  .logo-header {
+    max-width: 350px;
+    justify-content: space-between;
+  }
+
+  .logo-name {
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .logo-name a {
+    color: #fff;
+  }
+
+  .logo-name h1 {
+    font-size: 24px;
+  }
+
+  .logo-name h2 {
+    font-size: 20px;
+  }
+
+  .order-button {
+    font-family: "SeoulHangang EB", sans-serif;
+    text-align: center;
+    background-color: #d9d9d9;
+    margin-left: auto;
+    margin-right: 30px;
+    min-width: 150px;
+    min-height: 42px;
+    border-radius: 50px;
+  }
+
+  .order-button:hover {
+    background-color: #f66;
+    transition: 0.7s;
+  }
+
+  .order-button a {
+    padding-top: 7px;
+    display: block;
+    height: 100%;
+    font-weight: 400;
+    font-size: 26px;
+    color: #2b2b2b;
+  }
+
+  /* FIRST BLOCK */
+
+  .first-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    background: #d9d9d9;
+    border-radius: 50px;
+    margin-bottom: 44px;
+  }
+
+  .first-block-text {
+    font-family: "SeoulHangang CEB", sans-serif;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .first-block-text h1 {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+  }
+
+  .first-block-text ul li {
+    padding-top: 20px;
+    list-style: inside;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+  }
+
+  .first-block-img {
+    text-align: center;
+    padding: 75px 0;
+  }
+
+  .first-block-img img {
+    max-width: 350px;
+  }
+
+  /* SECOND BLOCK */
+
+  .second-block {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    max-width: 500px;
+    background: #d9d9d9;
+    border-radius: 50px;
+    margin-bottom: 44px;
+  }
+
+  .second-block-text {
+    font-family: "SeoulHangang CEB", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .second-block-text h1 {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+  }
+
+  .second-block-text ul li {
+    text-align: center;
+    list-style: inside;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000;
+  }
+
+  .second-block-img {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .second-block-img img {
+    max-width: 350px;
+  }
+
+  /* THIRD BLOCK */
+
+  .third-block {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    max-width: 500px;
+    background: #d9d9d9;
+    border-radius: 50px;
+    margin-bottom: 44px;
+  }
+
+  .third-block-text {
+    font-family: "SeoulHangang CEB", sans-serif;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .third-block-img {
+    border-radius: 30px;
+    width: auto;
+    height: auto;
+    padding: 50px 0;
+  }
+
+  .third-block-img img {
+    max-width: 350px;
+  }
+
+  .third-block-text h1 {
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    color: #000;
+  }
+
+  .third-block-text ul li {
+    list-style: inside;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 208%;
+    color: #000;
+  }
+  
+  /* ORDER BLOCK */
+
+.order-block {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  background: #d9d9d9;
+  border-radius: 50px;
+  align-items: center;
+  margin-bottom: 44px;
+  text-align: center;
+}
+
+.order-block-image {
+  border-radius: 50px;
+  min-height: 350px;
+  min-width: 50px;
+}
+
+.order-block-image img{
+  max-width: 250px;
+}
+
+.order-block-main {
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.order-block-main .main-text {
+  font-family: "SeoulHangang CEB";
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.order-block-main .price-tag {
+  font-family: "SeoulHangang CEB";
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 49px;
+}
+
+.order-block-main p {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #4f4f4f;
+  margin-bottom: 10px;
+}
+
+.order-block-main .order-block-button {
+  text-align: center;
+  font-family: "SeoulHangang CEB";
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #2b2b2b;
+  border-radius: 50px;
+  width: 325px;
+  height: 80px;
+}
+
+.order-block-main .order-block-button:hover {
+  background: #000;
+  transition: 0.7s;
+}
+
+.order-block-main .order-block-button a {
+  padding-top: 6%;
+  padding-bottom: 6%;
+  display: block;
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+}
+
+strike {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+/* FOOTER */
+
+footer {
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: baseline;
+  border-radius: 50px 50px 0 0;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  background: #d9d9d9;
+}
+
+footer h1 {
+  font-family: "SeoulHangang";
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #464646;
+  padding-top: 100px;
+}
+
+/* SLIDER */
+
+#slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 57vh;
+  background-color: #d9d9d9;
+  border-radius: 50px;
+}
+
+#frame {
+  overflow: hidden;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+#top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: 1s ease-in-out;
+}
+
+.slider-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background-color: #2b2b2b;
+  border-radius: 50px;
+}
+
+.slider-block h1 {
+  font-family: "SeoulHangang";
+  font-size: 25px;
+  color: #fff;
+}
+
+.slider-block h2 {
+  font-family: "SeoulHangang";
+  font-size: 20px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.slider-block p {
+  font-family: "SeoulHangang";
+  font-size: 15px;
+  color: #fff;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.pagination-circle {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.active {
+  background-color: #2b2b2b;
+  ;
+}
+
+#bottom {
+  display: flex;
+  column-gap: 25px;
+}
+
+/* TABLE */
+
+.about-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #d9d9d9;
+  max-width: 500px;
+  padding: 70px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-family: "SeoulHangang CBL";
+}
+
+.about-table caption {
+  font-family: "SeoulHangang CEB";
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.about-table th,
+td {
+  border: 1px solid #2b2b2b;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.about-table thead {
+  background-color: #464646;
+  color: #fff;
+}
+
+/* FORM */
+
+.external-form-block {
+  background: #d9d9d9;
+  border-radius: 50px;
+  text-align: center;
+  max-height: 57vh;
+  min-height: 57vh;
+}
+
+.internal-form-block {
+  margin: 50px;
+}
+
+.internal-form-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-text {
+  flex-direction: column;
+  font-size: 17px;
+}
+
+.form-block {
+  background: #2b2b2b;
+  font-family: "SeoulHangang";
+  font-size: 15px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.form__label {
+  margin-right: 12px;
+}
+
+.form__input {
+  font-family: "SeoulHangang";
+  font-size: 10px;
+  margin-bottom: 25px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.form__btn {
+  font-family: "SeoulHangang CEB";
+  font-size: 20px;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.form__btn:hover {
+  background-color: #464646;
+  color: #fff;
+}
+
+.about-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #d9d9d9;
+  padding: 25px;
+  border-radius: 50px;
+  margin-bottom: 44px;
+  align-items: center;
+}
+
+.about-video .about-text {
+  flex-direction: column;
+  text-align: center;
+  max-width: 90%;
+
+}
+
+.about-video .about-text h1 {
+  font-family: "SeoulHangang CBL";
+  font-size: 40px;
+}
+
+.about-video .about-text p {
+  font-family: "SeoulHangang CBL";
+  font-size: 20px;
+}
+
+.about-video video {
+  height: 30vh;
+  border-radius: 50px;
+  padding-top: 20px;
+}
+
+.ya-map {
+  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  background-color: #d9d9d9;
+  border-radius: 50px;
+
+}
+
+.ya-map-iframe {
+  max-width: 400px;
+  max-height: 300px;
+  border-radius: 50px;
+  border: 5px solid #2b2b2b;
+}
+
 }
