@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles/style.css" />
-  <link rel="icon" href="icons/icon.ico" type="image/x-icon" />
-  <script src="/scripts/script.js"></script>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="icon" href="../icons/icon.ico" type="image/x-icon" />
+  <script src="../scripts/script.js"></script>
   <title>Python4k | Блог</title>
 </head>
 
 <body>
-  <div class="navigation-menu">
+  <div class="navigation-menu open close" id="sidebar">
     <div class="title">
       <h1>МЕНЮ</h1>
     </div>
@@ -25,7 +25,7 @@
           <label for="check-nav">Навигация</label>
           <div class="drop-down-list-menu">
             <ul>
-              <li><a href="index.html"> - Главная</a></li>
+              <li><a href="../index.html"> - Главная</a></li>
               <li><a href="priceList.html"> - Прайс-лист</a></li>
               <li><a href="portfolio.html"> - Портфолио</a></li>
               <li><a href="order.html"> - Заказать</a></li>
@@ -38,7 +38,7 @@
           <label for="check-portfolio">Проекты</label>
           <div class="drop-down-list-menu">
             <ul>
-              <li><a href="index.html"> - Личный сайт</a></li>
+              <li><a href="../index.html"> - Личный сайт</a></li>
               <li><a href="https://github.com/Python4k/Email_Realization"> - Почтовый клиент</a></li>
               <li><a href="#"> - Облачное хранилище</a></li>
               <li><a href="#"> - API для умного дома</a></li>
@@ -77,7 +77,7 @@
   <header>
     <div class="logo-header">
       <div class="logo-name">
-        <a href="index.html">
+        <a href="../index.html">
           <h1>Python4k</h1>
           <h2>Веб-сайт под ключ</h2>
         </a>
@@ -86,12 +86,17 @@
         <a href="#bottom">Заказать</a>
       </div>
     </div>
+    <div class="menu-button">
+      <input type="button" id="check-button-menu" onclick="togglemenu()" value=" ">
+      <label for="check-button-menu">|||</label>
+    </div>
   </header>
+
   <div class="content">
     <div class="post">
       <div class="post-wrapper">
         <h1>Российские учёные создали робота-поводыря</h1>
-        <img src="images/post1.jpg" alt="Робот-поводырь">
+        <img src="../images/post1.jpg" alt="Робот-поводырь">
         <p>Специалисты из Невинномысского технологического института разработали робота-поводыря. Робот использует
           машинное зрение и языковую модель для ориентирования в пространстве и чтения информации с указателей и
           упаковок в магазинах. Прототип разработан и протестирован, сообщают "<a
@@ -122,6 +127,7 @@
   <footer>
     <h1>© Рыбаков Леонид 2024 год</h1>
   </footer>
+  <script src="../scripts/script.js"></script>
 </body>
 
 </html>

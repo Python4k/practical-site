@@ -4,28 +4,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles/style.css" />
-  <link rel="icon" href="icons/icon.ico" type="image/x-icon" />
-  <script src="/scripts/script.js"></script>
-  <title>Python4k | Заказать</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="icon" href="../icons/icon.ico" type="image/x-icon" />
+  <script src="../scripts/script.js"></script>
+  <title>Python4k | О нас</title>
 </head>
 
 <body>
-  <div class="navigation-menu">
+  <div class="navigation-menu open close" id="sidebar">
     <div class="title">
       <h1>МЕНЮ</h1>
     </div>
     <div class="list-menu">
       <ul>
         <li>
-          <a href="#">Блог</a>
+          <a href="blog.html">Блог</a>
         </li>
         <li>
           <input type="checkbox" id="check-nav">
           <label for="check-nav">Навигация</label>
           <div class="drop-down-list-menu">
             <ul>
-              <li><a href="index.html"> - Главная</a></li>
+              <li><a href="../index.html"> - Главная</a></li>
               <li><a href="priceList.html"> - Прайс-лист</a></li>
               <li><a href="portfolio.html"> - Портфолио</a></li>
               <li><a href="order.html"> - Заказать</a></li>
@@ -38,7 +38,7 @@
           <label for="check-portfolio">Проекты</label>
           <div class="drop-down-list-menu">
             <ul>
-              <li><a href="index.html"> - Личный сайт</a></li>
+              <li><a href="../index.html"> - Личный сайт</a></li>
               <li><a href="https://github.com/Python4k/Email_Realization"> - Почтовый клиент</a></li>
               <li><a href="#"> - Облачное хранилище</a></li>
               <li><a href="#"> - API для умного дома</a></li>
@@ -77,7 +77,7 @@
   <header>
     <div class="logo-header">
       <div class="logo-name">
-        <a href="index.html">
+        <a href="../index.html">
           <h1>Python4k</h1>
           <h2>Веб-сайт под ключ</h2>
         </a>
@@ -86,45 +86,55 @@
         <a href="#bottom">Заказать</a>
       </div>
     </div>
+    <div class="menu-button">
+      <input type="button" id="check-button-menu" onclick="togglemenu()" value=" ">
+      <label for="check-button-menu">|||</label>
+    </div>
   </header>
-  <div class="content">
-    <div class="external-form-block">
-      <div class="internal-form-block">
-        <div class="form-text">
-          <h1 class="main-text">
-            Закажите сайт<br>любой сложности<br>по скромной цене
-          </h1>
-          <h1 class="price-tag">от <strike>4999</strike> 2999 руб.</h1>
-          <br>
-          <p>
-            Оставьте заявку прямо сейчас и<br>получите скидку на первый заказ
-          </p>
-        </div>
-        <div class="form-block">
-          <form action="index2.html" method="post">
-            <div class="first-name-box">
-              <label for="first-name" class="form__label">Имя</label>
-              <input type="text" class="form__input" id="first-name" />
-            </div>
-            <div class="last-name-box">
-              <label for="last-name" class="form__label">Фамилия</label>
-              <input type="text" class="form__input" id="last-name" />
-            </div>
-            <div class="email-name-box">
-              <label for="email" class="form__label">Email</label>
-              <input type="email" class="form__input" id="email" />
-            </div>
-            <div class="submit-btn">
-              <input type="button" class="form__btn" value="Отправить">
-            </div>
-          </form>
-        </div>
+    <div class="content">
+      <div class="about-table">
+        <table>
+          <caption>Наши проекты</caption>
+          <thead>
+            <tr>
+              <th scope="col">Номер</th>
+              <th scope="col">Название</th>
+              <th scope="col">Готовность</th>
+              <th scope="col">Ссылка</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Бизнес сайт</td>
+              <td>Готов</td>
+              <td><a href="../index.html">Бизнес сайт</a></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Блог</td>
+              <td>В процессе</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Почтовый клиент</td>
+              <td>В планах</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Облачное хранилище</td>
+              <td>В планах</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </div>
-  <footer>
-    <h1>© Рыбаков Леонид 2024 год</h1>
-  </footer>
-</body>
-
+    <footer>
+        <h1>© Рыбаков Леонид 2024 год</h1>
+    </footer>
+    <script src="../scripts/script.js"></script>
+  </body>
 </html>
